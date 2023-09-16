@@ -1,0 +1,85 @@
+.conatiner{
+    background-color: lightgray;
+    display: flex;
+
+
+/* flex-direction: row;
+flex-direction: row-reverse;
+flex-direction: column;
+flex-direction: column-reverse; */
+
+/* felx-wrap: nowrap; Single Line */
+/* felx-wrap: nowrap; Multi Line */
+
+flex-flow: row wrap;
+
+/* row-gap: 20px;
+column-gap: 20px; */
+
+gap: 20px;
+}
+.container>.item{
+    background-color: gray;
+    /* margin: 20px; */
+    padding: 20px;
+    width: 29%;
+}
+
+
+/* P5.HTML CODE */
+.conatiner3>.item{
+    /* width: 200px; */
+    height: 100px;
+    /* flex-grow: 1; */
+    flex: 1;
+}
+.conatiner3>.item:first-child{
+    flex: 2;
+}
+.conatiner3>.item:last-child{
+    flex: 3;
+}
+
+/* P6.HTML CODE */
+.conatiner4{
+    flex-wrap: nowrap;
+}
+.conatiner4>.item{
+    flex-shrink: 1;
+}
+.conatiner4>.item:first-child{
+    flex-shrink: 5;
+}
+.conatiner4>.item:last-child{
+    flex-shrink: 9;
+}
+
+
+/* P2.HTML CODE */
+.container{
+    background-color: aqua;
+    display: flex;
+    /* 
+    flex-direction:row;
+    flex-direction:row-reverse;
+    flex-direction:column;
+    flex-direction:column-reverse;
+    */
+
+    /* flex-wrap: nowrap; single line */
+    /* flex-wrap: wrap; Multi line */
+
+    flex-flow: row wrap;
+
+    /* row-gap: 20px; */
+    /* column-gap: 20px */
+
+    gap: 20px;
+}
+.container>.item{
+    background: burlywood;
+    
+    /* margin: 20px; */
+    padding: 20px;
+    width: 25%;
+}

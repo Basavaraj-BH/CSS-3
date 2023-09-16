@@ -1,0 +1,346 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+:root{
+    --bg-green:  #43ba80;
+    --bg-brown: #ff521a;
+    --txt-brown:#ff521a;
+}
+/* FLEX */
+.container{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+/* Banner */
+.banner, .business{
+    background: linear-gradient(rgba(55,57,69,0.8),rgba(55,57,69,0.8)) ,url(../Image/Dextop.jpg)no-repeat center;
+    background-size: 100%;
+    padding: 100px;
+}
+.banner{padding: 50px 100px;}
+.banner>header>nav>ul{
+    list-style: none;
+    float: right;
+}
+.banner>header>nav>ul>li{
+    display: inline-block;
+    padding: 20px;
+}
+.banner>header>nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+.banner>header>nav>ul>li:hover a{
+   color: var(--txt-brown);
+}
+.banner>header>nav>ul>li:last-child{
+    background-color: var(--bg-green);
+    border-radius: 10px;
+}
+.banner>header>nav>img{
+    height: 54px;  
+}
+.banner>section{
+    margin-top: 100px;
+    width: 60%;
+}
+.banner>section>h1, .business>h1{
+    color: #fff;
+    font-size: 50px;
+}
+.banner>section>h1>span{
+    color: var(--txt-brown);
+}
+.banner>section>h1+hr{
+    width: 100px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.banner>section>p{
+    color: #fff;
+    text-align: justify;
+}
+.banner>section>h1,.banner>section>p,.banner>section>button{
+    margin: 20px auto;
+}
+.banner>section>button, .business>div>button, .aboutus>.container>section:last-child>button{
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    color: #fff;
+    margin-right: 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.banner>section>button:nth-child(4), 
+.business>div>button:first-child, 
+.aboutus>.container>section:last-child>button{
+    background-color: var(--bg-green);
+}
+.banner>section>button:last-child, .business>div>button:last-child{
+    background-color: var(--bg-brown);
+}
+.banner>section>button:hover, .business>div>button:hover{
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+
+/* ICON SECTION */
+.iconSection, .aboutus{padding: 100px;}
+.iconSection>.item{flex: 1;}
+.iconSection>.item>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 20px;
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+    border-top: 3px solid #ff521a;
+}
+.iconSection>.item>div:hover{
+    background-color: var(--bg-brown);
+    color: #fff;
+    border-top: 2px solid #43ba80;
+}
+[class*="fa-"]{
+    color: var(--bg-green);
+}
+.iconSection>.item>div>section>h2{
+    margin: 10px auto;
+}
+/* BUSINESS SOLUTION */
+.business{
+    justify-content: space-between;
+    padding: 50px;
+}
+.business>h1>span:first-child{color: #43ba80;}
+.business>h1>span:last-child{color: #ff521a;}
+/* ABOUT US  */
+.aboutus>.container>section:first-child{flex: 2;}
+.aboutus>.container>section:last-child{
+    flex: 1;
+    line-height: 2;
+}
+
+.aboutus>.container>section:first-child>table{width: 100%; border-spacing: 10px;}
+.aboutus>.container>section:first-child>table th,
+.aboutus>.container>section:first-child>table td{   
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+.aboutus>.container>section:first-child>table tr:first-child th {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;   
+}
+table tr:nth-child(3)>td:first-child,
+table tr:nth-child(4)>td:first-child,
+table tr:nth-child(5)>td:first-child,
+table tr:nth-child(6)>td:first-child{color: #43ba80;}
+
+.aboutus>.container>section:last-child>p{margin-bottom: 20px;}
+.aboutus>.container>section:last-child>button:hover{
+    border: 2px solid #ff521a;
+    background-color: transparent;
+    color: #43ba80;
+}
+/* FINANCIAL */
+.financial{
+    background: linear-gradient(rgba(55,57,69,0.8),rgba(55,57,69,0.8)) ,url(../Image/Dextop.jpg)no-repeat center;
+    height: 600px;
+    width: 100%;
+}
+.freedom{
+    position: relative;
+    bottom: 550px;
+    text-align: center; 
+    padding-left: 300px;
+    font-size: 20px;
+    color: #fff;
+    
+}
+.freedom>.freedom1>h5>span:first-child{
+    padding-right: 70px;
+    color: var(--bg-brown);
+}
+
+.freedom2>:first-child, .freedom2:nth-child(5){
+    padding-top: 20px;
+    padding-right: 100px;
+    margin-right: 30px;
+}
+.freedom2>:nth-child(2){
+    margin-right: 36px;
+    height: 25px;
+    background-color: rgba(147, 156,191,0.8);
+    border: none;
+}
+.freedom2>:nth-child(3){
+    position: relative;
+    margin-left: 235px;
+    bottom: 42px;
+}
+.freedom2>:nth-child(4){
+    margin-right: 36px;
+    height: 25px;
+    background-color: rgba(147, 156,191,0.8);
+    border: none;
+    position: relative;
+    margin-left: 350px;
+    bottom: 41px;
+}
+.freedom2>:nth-child(5){
+   margin-right: 150px;
+}
+.freedom2>:nth-child(7){
+    margin-right: 120px;
+    padding-top: 20px;
+ }
+.freedom2>:nth-child(6), .freedom2>:nth-child(8){
+    margin-left: 150px;
+    height: 25px;
+    background-color: rgba(147, 156,191,0.8);
+    border: none;
+    width: 350px;
+}
+.freedom2>:last-child{
+    margin-right: 100px;
+    background-color: var(--bg-brown);
+    border: 20px;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px 5px 5px 5px;
+}
+.photo>div{
+    margin: 120px; 
+}
+.freedom1>.freedom2{
+    flex-wrap: wrap;
+    text-align: inherit;
+}
+/* TEST */
+.test{
+    padding: 50px;
+    margin: 50px;
+}
+.test1>center>h5>span:nth-child(1){
+    color: var(--bg-brown);
+}
+.test2>h5>span:nth-child(1){
+    color: var(--bg-green);
+}
+.test2>img{
+    position: relative;
+    margin-left: 750px;
+    bottom: 130px; 
+}
+.text2>.test3{
+   position: relative;
+   padding-top: 100px;
+}
+.test2{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 20px;
+    padding: 20px;
+    height: 180px;
+    width: 900px;
+}
+.test2>.fa-quote-left{
+    color: #fff;
+    padding: 15px;
+    background-color: #43ba80;
+
+}
+/* COMPANY */
+.company{
+    background: linear-gradient(rgba(55,57,69,0.8),rgba(55,57,69,0.8)) ;
+    display: flex;
+    padding-left: 150px;
+    padding-bottom: 60px;
+}
+.final{
+    margin: 80px;
+}
+.final>.center1>h5{
+    color: #ff521a;
+    font-size: 10px;
+}
+.final>.center1>h1{
+    color: black;
+    font-size: 27px;
+}
+.final>.center2{
+    margin-top: 40px;
+    display: flex;
+}
+
+.final>.center2>.section1>p>.fa-quote-left{
+
+  padding: 10px;
+  background-color: #43ba80;
+  color: #fff;
+  margin-right: 480px;
+  margin-bottom: 20px;
+
+} 
+
+
+.section1>:nth-child(2)
+{
+   color: black;
+   text-align: justify;
+}
+
+.section1>:nth-child(3)
+{
+   color: black;
+   font-size: 20px;
+   margin-top: 20px;
+   padding-right: 385px;
+}
+
+.section1>:nth-child(4)
+{
+   color: #43ba80;  
+   margin-top: 5px;
+   padding-right: 425px;
+}
+.section2>div>img{
+    position: relative;
+    bottom: 50px;
+    padding-left: 20px;
+    height: 250px;
+    width: 217px;
+}
+.center2{
+    margin-left: 280px;
+    box-shadow: rgba(0,0,00.24) 0px 3px 8px;
+    padding: 50px;
+    width: 700px;
+    height: 150px;
+}
+
+.company{
+    background: linear-gradient(rgba(55,57,69,0.8),rgba(55,57,69,0.8));
+    display: flex;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.company2{
+    position: relative;
+    padding-left: 67px;
+    bottom: 58px;
+}
+
+/* FINAL */
+.footer{
+    background-color: rgba(32, 35, 35, 0.9);
+    color: #fff;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#basuu>span{
+    color: #ff521a;
+}
